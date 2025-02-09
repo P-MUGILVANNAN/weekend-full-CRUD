@@ -15,7 +15,7 @@ function UpdateData({ id }) {
         e.preventDefault();
         console.log(UpdateDetails);
 
-        const url = `http://localhost:8000/update/${id}`;
+        const url = `https://weekend-full-crud.onrender.com/update/${id}`;
 
         axios.put(url, UpdateDetails)
             .then((res) => {

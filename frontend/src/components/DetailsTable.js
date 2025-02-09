@@ -6,7 +6,7 @@ function DetailsTable() {
 
     const [employees, setEmployees] = useState([]);
     useEffect(() => {
-        axios.get('http://localhost:8000/employee')
+        axios.get('https://weekend-full-crud.onrender.com/employee')
             .then((res) => {
                 console.log(res.data);
                 setEmployees(res.data);
@@ -14,7 +14,7 @@ function DetailsTable() {
     });
 
     const handleDelete = (id)=>{
-        axios.delete(`http://localhost:8000/delete/${id}`)
+        axios.delete(`https://weekend-full-crud.onrender.com/delete/${id}`)
         .then((res)=>{
             console.log(res.data);
             alert("Employee Deleted successfully...");

@@ -24,7 +24,7 @@ function Form() {
     };
 
     console.log('Form Details:', Details);  // Log the form data
-    axios.post('http://localhost:8000/Form',Details)
+    axios.post('https://weekend-full-crud.onrender.com/Form',Details)
     .then((res)=>{
         console.log(res.data);
         alert("Employee added successfully");
